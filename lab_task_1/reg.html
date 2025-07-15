@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Full Registration Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #eef2f3;">
+
+    <header style="text-align:center; background-color: #333; color: white; padding: 20px;">
+        <h1>Registration Form</h1>
+    </header>
+
+    <section style="padding: 20px;">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other<br><br>
+
+                <label for="photo">Upload Photo:</label><br>
+                <input type="file" id="photo" name="photo"><br><br>
+
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="country">Country:</label><br>
+                <select id="country" name="country">
+                    <option>--Select--</option>
+                    <option>Bangladesh</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                </select><br><br>
+
+                <label for="language">Preferred Language:</label><br>
+                <input type="checkbox" name="language" value="English"> English
+                <input type="checkbox" name="language" value="Bangla"> Bangla
+                <input type="checkbox" name="language" value="Hindi"> Hindi<br><br>
+
+                <label>Progress:</label><br>
+                <progress value="60" max="100"></progress><br><br>
+
+                <label>Account Strength:</label><br>
+                <meter value="0.8">80%</meter><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Extras</legend>
+
+                <label>Listen Welcome Audio:</label><br>
+                <audio controls>
+                    <source src="welcome.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio><br><br>
+
+                <label>Watch Intro Video:</label><br>
+                <video width="320" height="240" controls>
+                    <source src="intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video><br><br>
+
+                <label>Example Image:</label><br>
+                <img src="profile.jpg" alt="Profile Picture" width="100"><br><br>
+
+                <details>
+                    <summary>Need Help?</summary>
+                    Fill out all required fields and click Register.
+                </details><br><br>
+            </fieldset>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <section style="padding: 20px;">
+        <h2>Contact Information</h2>
+        <address>
+            Electric Web Solutions Ltd.<br>
+            Dhaka, Bangladesh<br>
+            Email: info@websolution.com
+        </address>
+
+        <abbr title="Hyper Text Markup Language">HTML</abbr> is used here.<br><br>
+
+        <iframe src="https://www.example.com" width="300" height="100" title="Example Frame"></iframe>
+    </section>
+
+    <footer style="text-align: center; background-color: #333; color: white; padding: 10px;">
+        &copy; 2025 Registration Page | All Rights Reserved
+    </footer>
+
+</body>
+</html>
