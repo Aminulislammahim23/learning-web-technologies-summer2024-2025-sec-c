@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Full Registration Page</title>
+    <title>Registration Form</title>
 </head>
 <body>
-    <h1>Mahim</h1>
+    <center>
+    <form>
+        <h1>Student Registration Form</h1>
+
+        <label for="rollNo">Roll no. :</label>
+        <input type="text" id="rollNo" name="rollNo"><br><br>
+
+        <label for="studentName">Student Name :</label>
+        <input type="text" id="studentName" name="studentName"><br><br>
+
+        <label for="fathersName">Father's Name :</label>
+        <input type="text" id="fathersName" name="fathersName"><br><br>
+
+        <label for="dob">Date of birth :</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="number">Mobile no :</label>
+        <input type="number" id="number" name="number"><br><br>
+
+        <label for="email">Email id :</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="fathersName">Password :</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="gender">Gender :</label>
+        <input type="radio" id="male" name="gender" value="Male">Male
+        <input type="radio" id="female" name="gender" value="Female">Female<br><br>
+
+        <lable for="dept">Department :</lable>
+        <input type="checkbox" id="cse" name ="dept" value="cse">CSE
+        <input type="checkbox" id="eee" name ="dept" value="cse">EEE
+        <input type="checkbox" id="bba" name ="dept" value="cse">BBA
+        <input type="checkbox" id="eng" name ="dept" value="cse">English
+        <input type="checkbox" id="law" name ="dept" value="cse">LAW<br><br>
+
+        <label for="course">Course :</label>
+        <select>
+                        <option>--------------------- Select Current Course's ---------------------</option>
+                        <option>B.Sc</option>
+                        <option>M.Sc</option>
+        </select> 
+        <br><br>
+
+        <label for="stPhotos">Student photo :</label>
+        <input type="file" id="stPhotos" name="stPhotos"><br><br>
+
+        <label for="city">City :</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="address">Address :</label>
+        <textarea name="address" row="10" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+    </center>
 </body>
 </html>
