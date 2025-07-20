@@ -1,1 +1,2 @@
 # learning-web-technologies-summer2024-2025-sec-c
+to learn to get success
