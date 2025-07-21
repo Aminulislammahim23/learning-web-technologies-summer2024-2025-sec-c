@@ -1,15 +1,41 @@
 body{
     background-color: darkgoldenrod;
-}
-
-.blue{
-    background-color: blue;
-}
-
-.info{
-    background-color: aliceblue;
-    height: 300px;
-    width: 400px;
-    margin: 20px;
     padding: 20px;
+}
+
+h1{
+    justify-content: center;
+}
+
+.profile-form {
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 20px 30px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    padding: 10px;
+    
+}
+
+.form-group label {
+    width: 100px;
+    font-weight: bold;
+}
+
+.button-group {
+    justify-content: center;
+    border: none;
+}
+
+.button-group input {
+    padding: 8px 16px;
+    margin: 5px;
 }

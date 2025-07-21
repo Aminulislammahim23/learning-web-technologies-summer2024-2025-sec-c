@@ -5,61 +5,69 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <center>
+    
     <form>
-        <h1 class="blue">Student Registration Form</h1>
+        <h1>PERSON PROFILE</h1>
 
-        <label for="rollNo">Roll no. :</label>
-        <input type="text" id="rollNo" name="rollNo"><br><br>
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        </div>
 
-        <label for="studentName">Student Name :</label>
-        <input type="text" id="studentName" name="studentName"><br><br>
-
-        <label for="fathersName">Father's Name :</label>
-        <input type="text" id="fathersName" name="fathersName"><br><br>
-
-        <label for="dob">Date of birth :</label>
-        <input type="date" id="dob" name="dob"><br><br>
-
-        <label for="number">Mobile no :</label>
-        <input type="number" id="number" name="number"><br><br>
-
-        <label for="email">Email id :</label>
+        <div class="form-group">
+        <label for="email">Email</label>
         <input type="email" id="email" name="email"><br><br>
+        </div>
 
-        <label for="fathersName">Password :</label>
-        <input type="password" id="password" name="password"><br><br>
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+        </div>
 
-        <label for="gender">Gender :</label>
-        <input type="radio" id="male" name="gender" value="Male">Male
-        <input type="radio" id="female" name="gender" value="Female">Female<br><br>
+        <div class="form-group">
+             <label for="dob">Date of birth :</label>
+            <input type="date" id="dob" name="dob"><br><br>
+        </div>
 
-        <lable for="dept">Department :</lable>
-        <input type="checkbox" id="cse" name ="dept" value="cse">CSE
-        <input type="checkbox" id="eee" name ="dept" value="cse">EEE
-        <input type="checkbox" id="bba" name ="dept" value="cse">BBA
-        <input type="checkbox" id="eng" name ="dept" value="cse">English
-        <input type="checkbox" id="law" name ="dept" value="cse">LAW<br><br>
+        <div class="form-group">
+            <label for="bloodgroup">Blood Group</label>
+            <select id="bloodgroup" name="bloodgroup">
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+        </div>
 
-        <label for="course">Course :</label>
-        <select>
-                        <option>--------------------- Select Current Course's ---------------------</option>
-                        <option>B.Sc</option>
-                        <option>M.Sc</option>
-        </select> 
-        <br><br>
+        <div class="form-group">
+        <lable for="dept">Degree :</lable>
+        <div class="checkbox-group">
+        <input type="checkbox" id="ssc" name ="deg" value="ssc">SSC
+        <input type="checkbox" id="hsc" name ="deg" value="hsc">HSC
+        <input type="checkbox" id="bsc" name ="deg" value="bsc">BSc
+        <input type="checkbox" id="msc" name ="deg" value="msc">MSc<br><br>
+        </div>
+        </div>
 
-        <label for="stPhotos">Student photo :</label>
-        <input type="file" id="stPhotos" name="stPhotos"><br><br>
+        <div class="form-group">
+        <label for="name">Photo</label>
+        <input type="file" id="photo" name="photo"><br><br>
+        </div>
+        
+        <div class="form-group button-group">
+        <input type="submit" value="Submit">
+        <input type="submit" value="Reset">
+        </div>
 
-        <label for="city">City :</label>
-        <input type="text" id="city" name="city"><br><br>
 
-        <label for="address">Address :</label>
-        <textarea name="address" row="10" cols="30"></textarea><br><br>
-
-        <input type="submit" value="Register">
     </form>
-    </center>
 </body>
 </html>
