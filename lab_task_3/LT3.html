@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Username Validation</title>
+</head>
+<body>
+  <form onsubmit="return loginCheck();">
+    <fieldset>
+            <label for="uname">Username:</label>
+            <input type="text" id="uname" name="uname"><br>
+            <span id="success"></span><br><br>
+            <input type="submit" value="Login">
+    </fieldset>
+  </form>
+
+  <script>
+    function loginCheck() {
+      let uname = document.getElementById('uname').value.trim();
+      let successMsg = document.getElementById('success');
+
+    
+      if (uname === "") {
+        successMsg.innerHTML = "Username Cannot be empty";
+        successMsg.style.color = 'red';
+        return false;
+      }
+
+ 
+      if (!/^[a-zA-Z]/.test(uname)) {
+        successMsg.innerHTML = "Username must start with a letter.";
+        successMsg.style.color = 'red';
+        return false;
+      }
+
+      if (!/^[a-zA-Z.\-\s]+$/.test(uname)) {
+        successMsg.innerHTML = "Username can only contain letters, dot (.), or dash (-).";
+        successMsg.style.color = 'red';
+        return false;
+      }
+
+      let words = uname.split(" ").filter(word => word !== "");
+      if (words.length < 2) {
+        successMsg.innerHTML = "Username Contains at least two words.";
+        successMsg.style.color = 'red';
+        return false;
+      }
+
+      successMsg.innerHTML = "Valid username!";
+      successMsg.style.color = 'green';
+      return true;
+    }
+  </script>
+
+</body>
+</html>
