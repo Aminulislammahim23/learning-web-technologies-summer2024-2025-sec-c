@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="style.css">
 <head>
-  <title>Username Validation</title>
-</head>
-<body>
-  <form onsubmit="return loginCheck();">
-    <fieldset>
-            <label for="uname">Username:</label>
-            <input type="text" id="uname" name="uname"><br>
-            <span id="success"></span><br><br>
-            <input type="submit" value="Login">
-    </fieldset>
-  </form>
-
+    <title>Username Validation</title>
+</head>     
+            
   <script>
     function loginCheck() {
       let uname = document.getElementById('uname').value.trim();
@@ -49,7 +41,99 @@
       successMsg.style.color = 'green';
       return true;
     }
+
+    function CheckEmail(){
+        let email = document.getElementById('email').value.trim();
+        let successMsg2 = document.getElementById('success');
+
+        if (email === "") {
+        successMsg2.innerHTML = "Username Cannot be empty";
+        successMsg2.style.color = 'red';
+        return false;
+      }
+
+      successMsg2.innerHTML = "Valid Email!";
+      successMsg2.style.color = 'green';
+      return true;
+
+    }
+
   </script>
 
+  <body>
+<form onsubmit="return loginCheck();">
+    <table>
+        <tr>
+            <th colspan="3">PERSON PROFILE</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td colspan="2"><input type="text" id="uname" name="uname"></td>
+        </tr>
+         <tr>
+                <td>Email</td>
+                <td colspan="2"><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td colspan="2">
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td colspan="2">
+                    <input type="text" size="2" maxlength="2"> /
+                    <input type="text" size="2" maxlength="2"> /
+                    <input type="text" size="4" maxlength="4">
+                    <span style="font-size: 12px;">(dd/mm/yyyy)</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Blood Group</td>
+                <td colspan="2">
+                    <select name="blood">
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Degree</td>
+                <td colspan="2">
+                    <input type="checkbox" name="degree" value="ssc">SSC
+                    <input type="checkbox" name="degree" value="hsc">HSC
+                    <input type="checkbox" name="degree" value="bsc">BSc.
+                    <input type="checkbox" name="degree" value="msc">MSc.
+                </td>
+            </tr>
+            <tr>
+                <td>Photo</td>
+                <td colspan="2">
+                    <input type="file" name="photo">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right;">
+                    <input type="submit" value="Submit">     
+                    <input type="reset" value="Reset">
+                   
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right;">
+                        <span id="success"></span><br>
+                </td>
+            </tr>
+        </table>
+</form>
 </body>
 </html>
